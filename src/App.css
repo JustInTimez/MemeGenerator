@@ -36,7 +36,14 @@
   gap: 17px;
 }
 
+.input-box {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #26b0d3;
+  text-indent: 10px;
+}
+
 .fetch-image-button {
   grid-column: 1 / -1;
-
+  background: linear-gradient(90deg, #226d80 1.18%, #26b0d3 100%);
 }
