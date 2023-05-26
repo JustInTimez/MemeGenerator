@@ -47,3 +47,7 @@
   grid-column: 1 / -1;
   background: linear-gradient(90deg, #226d80 1.18%, #26b0d3 100%);
 }
+
+.meme-image {
+  width: 100%;
+}
