@@ -4,14 +4,13 @@ import memeData from "../memeData"
 
 
 export default function Meme() {
-  // Start meme image state with empty string for now
-  const [meme, setMeme] = React.useState({
+  const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
     randomImage: "http://i.imgflip.com/1bij.jpg" 
   })
 
-  const [allMemeImages, setAllMemeImages] = React.useState(memeData)
+  const [allMemeImages, setAllMemeImages] = useState(memeData)
 
   function fetchMemeImage() {
     const memesArray = allMemeImages.data.memes
@@ -25,18 +24,23 @@ export default function Meme() {
   }
 
   return (
-    <main className="meme">
-        <div className="input-area">
-            <input className="input-box" placeholder="Shup up" type="text" />
-            <input className="input-box" placeholder="And take my money!" type="text" />
-            <button 
-                className="fetch-image-button"
-                onClick={fetchMemeImage}
-            >
-                🖼️Get a new meme image!🖼️
-            </button>
-        </div>
+    <main>
+      <div className="input-area">
+        <input className="input-box" placeholder="Shup up" type="text" />
+        <input
+          className="input-box"
+          placeholder="And take my money!"
+          type="text"
+        />
+        <button className="fetch-image-button" onClick={fetchMemeImage}>
+          🖼️Get a new meme image!🖼️
+        </button>
+      </div>
+      <div className="meme">
         <img className="meme-image" src={meme.randomImage} />
+        <h2 className="meme-text top">Top text</h2>
+        <h2 className="meme-text bottom">Bottom text</h2>
+      </div>
     </main>
-  )
+  );
 }
