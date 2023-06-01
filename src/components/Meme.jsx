@@ -12,6 +12,16 @@ export default function Meme() {
 
   const [allMemeImages, setAllMemeImages] = useState(memeData)
 
+  function handleChange(event) {
+    const {name, value, type} = event.target
+    setMeme(prevMeme => {
+      return {
+        ...prevMeme,
+        [event.target.name]: event.target.value
+      }
+    })
+  }
+
   function fetchMemeImage() {
     const memesArray = allMemeImages.data.memes
     const randomNumber = Math.floor(Math.random() * memesArray.length)
@@ -26,11 +36,21 @@ export default function Meme() {
   return (
     <main>
       <div className="input-area">
-        <input className="input-box" placeholder="Shup up" type="text" />
+        <input 
+          className="input-box" 
+          placeholder="Top Text" 
+          type="text"
+          name="topText"
+          value={meme.topText}
+          onChange={handleChange}
+          />
         <input
           className="input-box"
-          placeholder="And take my money!"
+          placeholder="Bottom Text"
           type="text"
+          name="bottomText"
+          value={meme.bottomText}
+          onChange={handleChange}
         />
         <button className="fetch-image-button" onClick={fetchMemeImage}>
           🖼️Get a new meme image!🖼️
@@ -38,8 +58,8 @@ export default function Meme() {
       </div>
       <div className="meme">
         <img className="meme-image" src={meme.randomImage} />
-        <h2 className="meme-text top">Top text</h2>
-        <h2 className="meme-text bottom">Bottom text</h2>
+        <h2 className="meme-text top">{meme.topText}</h2>
+        <h2 className="meme-text bottom">{meme.bottomText}</h2>
       </div>
     </main>
   );
