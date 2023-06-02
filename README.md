@@ -2,10 +2,10 @@
 This is a basic React JSX project that allows you to create your own funny meme by adding text to a randomly fetched meme image from the imgflip API. You can input your desired text in two text input fields, and the text will be displayed over the image.
 
 ## Features
--[X] Fetches random meme images from the imgflip API.
--[X] Allows you to input text for the top and bottom sections of the meme.
--[X] Renders the entered text over the meme image.
--[X] Updates the meme image and clears the text fields when a new meme is fetched.
+- [X] Fetches random meme images from the imgflip API.
+- [X] Allows you to input text for the top and bottom sections of the meme.
+- [X] Renders the entered text over the meme image.
+- [X] Updates the meme image and clears the text fields when a new meme is fetched.
 
 ## How to use
 * On the main page, you will see a default meme image with two text input fields and a "Get a new meme image!" button.
@@ -18,7 +18,7 @@ This is a basic React JSX project that allows you to create your own funny meme 
 ```git clone <repository-url>```
 
 2. Navigate to the project directory:
-```cd meme-generator```
+```cd memegenerator```
 
 3. Install the dependencies with npm or yarn:
 ```npm install``` 
@@ -30,7 +30,7 @@ OR
 OR
 ```yarn dev```
 
-Click on the http://localhost link in your terminal after successful startup to see the running app in your browser.
+Click on the ```http://localhost``` link in your terminal after successful startup to see the running app in your browser.
 Make sure you have Node.js installed on your machine.
 Note: This project uses **Vite** as the build tool, which provides a fast development server and optimized builds.
 
