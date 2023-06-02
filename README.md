@@ -17,7 +17,7 @@ This project makes use of the following technologies and React hooks:
 
 The `useState` hook is used to manage the state of the text input fields, allowing you to input and update the text for the top and bottom sections of the meme.
 
-The `useEffect` hook is used to handle the side effect of fetching a new meme image from the imgflip API and updating the state when the window is resized.
+The `useEffect` hook is used to handle the side effect of fetching a new meme image from the imgflip API and updating the state.
 
 
 ## How to use
