@@ -7,6 +7,19 @@ This is a basic React JSX project that allows you to create your own funny meme 
 - [X] Renders the entered text over the meme image.
 - [X] Updates the meme image and clears the text fields when a new meme is fetched.
 
+## Technologies and Hooks Used
+
+This project makes use of the following technologies and React hooks:
+
+- React: JavaScript library for building user interfaces.
+- useState: React hook for managing state within functional components.
+- useEffect: React hook for handling side effects, such as fetching data or subscribing to events.
+
+The `useState` hook is used to manage the state of the text input fields, allowing you to input and update the text for the top and bottom sections of the meme.
+
+The `useEffect` hook is used to handle the side effect of fetching a new meme image from the imgflip API and updating the state when the window is resized.
+
+
 ## How to use
 * On the main page, you will see a default meme image with two text input fields and a "Get a new meme image!" button.
 * Enter your desired text in the top and bottom text input fields to customize the meme.
