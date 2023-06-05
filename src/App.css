@@ -99,3 +99,21 @@ main {
   bottom: 0;
 }
 
+
+.meme-history {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
